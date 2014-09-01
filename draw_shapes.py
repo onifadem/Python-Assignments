@@ -22,11 +22,18 @@ def draw_rectangle(lenght, breadth):
     turtle.done()
 draw_rectangle(100,50)"""
 
-import turtle
+"""import turtle
 def draw_circle(diameter):
         turtle.circle(diameter)
         turtle.left(360)
         turtle.done()
-draw_circle(150)
+draw_circle(150)"""
 
-
+import turtle
+def draw_triangle(a,int_angle,b):
+    turtle.forward(a)
+    turtle.left(180 - int_angle)
+    turtle.forward(b)
+    turtle.home()
+    turtle.done()
+draw_triangle(200,90,100)
