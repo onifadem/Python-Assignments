@@ -29,11 +29,26 @@ def draw_circle(diameter):
         turtle.done()
 draw_circle(150)"""
 
-import turtle
+"""import turtle
 def draw_triangle(a,int_angle,b):
     turtle.forward(a)
     turtle.left(180 - int_angle)
     turtle.forward(b)
     turtle.home()
     turtle.done()
-draw_triangle(200,90,100)
+draw_triangle(200,90,100)"""
+
+import turtle
+def draw_paralellogram(a,int_angle,b):
+    ext_angle = 180 - int_angle
+    i=0
+    while(i<2):
+        turtle.forward(a)
+        turtle.left(ext_angle)
+        turtle.forward(b)
+        turtle.left(int_angle)
+        i=i+1
+    turtle.done()
+draw_paralellogram(100,60,50)
+
+
