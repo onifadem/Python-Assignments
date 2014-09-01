@@ -24,12 +24,9 @@ draw_rectangle(100,50)"""
 
 import turtle
 def draw_circle(diameter):
-    i=0
-    while(i<2):
-        turtle.forward(diameter)
+        turtle.circle(diameter)
         turtle.left(360)
-        i=i+1
-    turtle.done()
-draw_circle(90)
+        turtle.done()
+draw_circle(150)
 
 
